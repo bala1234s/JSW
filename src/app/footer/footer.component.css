@@ -1,0 +1,26 @@
+footer{
+    background-color: #2847A7;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Contact p,h1{
+    cursor: pointer;
+    text-align: center;
+}
+.Contact p:hover{
+    color: red;
+    transition: all 300ms ease-in;
+    border-bottom: 2px solid red;
+
+
+}

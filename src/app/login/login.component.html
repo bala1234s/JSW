@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <div>
+        <form [formGroup]="login" (ngSubmit)="submit()">
+            <div><b>Login</b></div>
+            <div>
+                <div>
+                    <label for="">Email</label>
+
+                </div>
+                <div>
+                    <input type="email" placeholder="your email" formControlName="email"><br>
+                    <small style="color: red;" *ngIf="login.controls['email'].errors?.['required'] && login.controls['email'].dirty">your email is empty</small>
+                    <small style="color: red;" *ngIf="login.controls['email'].errors?.['pattern']">email should contain '@' and .com</small>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="">Password</label>
+                    <br>    
+                    <small style="color: red;" *ngIf="login.controls['password'].errors?.['required'] && login.controls['password'].dirty"> Your password is empty</small>
+                    <small style="color: red;" *ngIf="login.controls['password'].errors?.['pattern']">You should give strong password </small>
+
+                </div>
+                <div>
+                    <input type="password" placeholder="your password" formControlName="password" [type]="changechar ? 'password':'text'" ><i class="fa-solid fa-eye" [ngClass]="{'fa-eye-slash':field,'fa-eye':!field}" (click)="changeicon()"></i>
+                </div>
+            </div>
+            <div>
+                <button>Login <i class="fa-solid fa-right-to-bracket"></i></button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

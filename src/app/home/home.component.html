@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- JSW Nav bar start-->
+
+    <app-navbar></app-navbar>
+
+    <!-- JSW Nav bar end-->
+
+    
+
+    <!-- home JSW image change -->
+    
+    <div class="home">
+        
+        <div (click)="back()" class="home-back">
+            <!-- home JSW Back image -->
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </div>
+        <div id="img">
+            <!-- home JSW image -->
+            <img src="../../assets/home/jsw-home.jpg" alt="JSW image" id="image">
+        </div>
+
+        <div class="home-front" (click)="forward()">
+            <!-- home JSW Forward image -->
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
+
+
+
