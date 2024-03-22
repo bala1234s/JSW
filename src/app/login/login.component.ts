@@ -35,7 +35,7 @@ export class LoginComponent {
       
       
       sessionStorage.setItem('loginAdmin', this.email);
-
+      
       if (this.email == environment.Admin_Email && this.password == environment.Admin_Password) {
         sessionStorage.setItem('loginAdmin', 'true');
         this.route.navigateByUrl("adminHome").then(() => {
@@ -48,12 +48,15 @@ export class LoginComponent {
       this.data = get.find((login:any) => { 
         return this.email==login.email && this.password==login.password
       });
-
+      
       if (this.data) {
+        sessionStorage.setItem('loginEmp', 'true');
+        
+        sessionStorage.setItem('login', this.email);
         this.route.navigateByUrl("employee").then(() => {
           window.location.reload();
-        });;
-        
+        });
+        // console.log(sessionStorage.getItem('login'));
       }
       else {
         alert("not found");

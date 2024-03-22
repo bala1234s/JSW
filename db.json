@@ -29,7 +29,96 @@
     {
       "email":"abi@gmail.com",
       "password":"Abi@2024"
+    },
+    {
+      "email":"msrinivas.rao@jsw.in",
+      "password":"JswEmp@2024"
+    },
+    {
+      "email":"sudharsan.venkatesan@jsw.in",
+      "password":"JswEmp@2024"
+    },
+    {
+      "email":"rajesh.durairaj@jsw.in",
+      "password":"JswEmp@2024"
+    },
+    {
+      "email":"karikalan.raju@jsw.in",
+      "password":"JswEmp@2024"
+    }
+
+  ],
+  "employee":[
+    {
+      "id":0,
+      "Emp_name":"Srinivasa Rao M",
+      "Emp_department":"Coke Oven Plant",
+      "Emp_number":1034057,
+      "Emp_grade":"L14",
+      "Emp_mail":"msrinivas.rao@jsw.in",
+      "Emp_code":"COP",
+      "Emp_customer":["SP","BF","CPP"]
+    },
+    {
+      "id":1,
+      "Emp_name":"Srinivasa Rao M",
+      "Emp_department":"Sinter Plant",
+      "Emp_number":1034057,
+      "Emp_grade":"L14",
+      "Emp_mail":"msrinivas.rao@jsw.in",
+      "Emp_code":"SP",
+      "Emp_customer":["BF"]
+    },
+    {
+      "id":2,
+      "Emp_name":"Sudharsan V",
+      "Emp_department":"Blast Furnace",
+      "Emp_number":1033449,
+      "Emp_grade":"L14",
+      "Emp_mail":"sudharsan.venkatesan@jsw.in",
+      "Emp_code":"BF",
+      "Emp_customer":["SP","BF","CPP"]
+    },
+    {
+      "id":3,
+      "Emp_name":"Rajesh D",
+      "Emp_department":"Steel Melting Shop",
+      "Emp_number":1033303,
+      "Emp_grade":"L14",
+      "Emp_mail":"rajesh.durairaj@jsw.in",
+      "Emp_code":"SMS",
+      "Emp_customer":["BRM","BLM","QAD","PPC"]
+    },
+    {
+      "id":4,
+      "Emp_name":"Karikalan R",
+      "Emp_department":"Bar & Rod Mill",
+      "Emp_number":1033303,
+      "Emp_grade":"L13",
+      "Emp_mail":"karikalan.raju@jsw.in",
+      "Emp_code":"BRM",
+      "Emp_customer":["QAD","PPC"]
+    },
+    {
+      "id":5,
+      "Emp_name":"Karikalan R",
+      "Emp_department":"Blooming Mill",
+      "Emp_number":1033991,
+      "Emp_grade":"L13",
+      "Emp_mail":"karikalan.raju@jsw.in",
+      "Emp_code":"BLM",
+      "Emp_customer":["QAD","PPC"]
+    },
+    {
+      "id":6,
+      "Emp_name":"Venkatesa Perumal A",
+      "Emp_department":"Captive Power Plant",
+      "Emp_number":1033761,
+      "Emp_grade":"L13",
+      "Emp_mail":"venkatesa.perumal@jsw.in",
+      "Emp_code":"CPP",
+      "Emp_customer":["BF","SMS"]
     }
   ]
   
-}
+} 

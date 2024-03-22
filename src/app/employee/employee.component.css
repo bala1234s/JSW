@@ -1,7 +1,26 @@
+*{
+    font-family: "Roboto Slab", serif;
+}
+
 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
+    
+}
+table{
+    font-size: 25px;
+    background-color:rgb(209, 209, 209);
+    padding: 40px; 
+    border-radius: 20px;       
+    
+
+}
+table th{
+    color: #2847A7;
+}
+table td{
+    margin-left: 10px;
 }
