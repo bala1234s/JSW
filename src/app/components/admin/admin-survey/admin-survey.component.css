@@ -1,0 +1,317 @@
+*{
+    font-family: Arial, sans-serif;
+    /* background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;  */
+}
+.admin-questions {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    
+    
+}
+.select-Department {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.select-Department div {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.select-Department p {
+    font-size: 16px;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.select-Department input[type="date"],
+.select-Department input[type="email"],
+.select-Department select {
+    width: 30rem;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.select-Department select {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.search-questions {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-questions h3 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.search-questions input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.create-questions{
+    display: flex;
+    justify-content: center ;
+    align-items: baseline;
+    gap: 20px;
+}
+.create-questions button{
+    background-color: #2847A7;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+/* 
+.view-questions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40rem;
+}
+.edit{
+    display: flex;
+    gap: 20px;
+} */
+
+.select-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.view-questions {
+    background-color: #e3e5e6;
+    /* New background color */
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5rem;
+    /* position: relative; */
+    /* For positioning the .edit div */
+}
+
+.question h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.Answers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.Answers div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Answers label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* position: absolute;
+    top: 1rem;
+    right: 1rem; */
+    /* Positioning to the right */
+}
+
+.edit i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.edit i:hover {
+    color: #555;
+}
+
+.edit input[type="checkbox"] {
+    margin-left: 0.5rem;
+}
+/* .send button{
+    background-color: #2847A7;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-left: 50%;
+}
+form button{
+     background-color: #2847A7;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-left: 2rem;
+    
+}
+form{
+    background-color: rgb(182, 216, 255);
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    
+
+    
+}
+#newQuestion{
+    display: none;
+}
+form input{
+    height: 10rem;
+    width: 30rem;
+    border: none;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 10px;
+    
+} */
+
+#newQuestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f0f4f8;
+    /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 35rem;
+}
+
+.createQuestions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    /* Max width for form */
+    background-color: #ffffff;
+    /* White background for form */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.createQuestions div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.createQuestions label {
+    font-size: 1.2rem;
+    color: #333;
+    /* margin-bottom: 0.5rem; */
+}
+
+.createQuestions input[type="text"],
+.createQuestions select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.createQuestions button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.createQuestions button:hover {
+    background-color: #0056b3;
+}
+
+.createQuestions button[type="button"] {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #6c757d;
+    /* Different color for back button */
+}
+
+.createQuestions button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+.createQuestions i {
+    font-size: 1rem;
+}

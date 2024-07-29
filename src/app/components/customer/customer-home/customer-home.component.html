@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+ 
+<div class="main-container">
+        <div class="customer-department">
+            <div class="department-title">Customer Department :{{empData.empCode}}</div>
+            <div class="buttons-container">
+                <button class="action-btn">Action Plan</button>
+                <button class="action-btn">Action Review</button>
+            </div>
+        </div>
+        <table >
+            <thead>
+                <tr>
+                    <th>Supplier</th>
+                    <th>Received Date</th>
+                    <th>Survey</th>
+                    <th>Deadline</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of empData.empQuestion.department">
+                    <td>{{item.dept}}</td>
+                    <td>{{item.sendDate}}</td>
+                    <td><button class="survey-btn" (click)="survey(item)">Take Survey</button></td>
+                    <td>{{item.deadline}}</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>

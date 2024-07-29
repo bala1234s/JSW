@@ -1,0 +1,31 @@
+
+    <app-navbar></app-navbar>
+
+    <div class="empPage">
+        <div class="empBackground">
+
+        </div>
+
+        
+            <div class="emp">
+                <div>
+                    <h4>Name : {{Emp_name}}</h4>
+                </div>
+                <div>
+                    <h4>Department : {{Emp_department}}</h4>
+                </div>
+                <div>
+                    <h4>Number : {{Emp_number}}</h4>
+                </div>
+                <div>
+                    <select name="role" id="role" #role (change)="changeRole(role.value)">
+                        <option value="">Select domain</option>
+                        <option value="supplier" id="supplier">Supplier</option>
+                        <option value="customer">Customer</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+
+
+

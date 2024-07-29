@@ -1,0 +1,20 @@
+<nav>
+    <div>
+        
+        <div class="menubar">
+           
+            <img src="../../assets/logo/jsw-logo.png" alt="" routerLink="/" style="cursor: pointer;">
+        </div>
+        
+
+    </div>
+
+    <div class="title">
+        <h1>Internal Customer Survey Portal</h1>
+    </div>
+
+    <div>   
+        <button (click)="login()" *ngIf="checkIn">Login</button>
+        <button (click)="logout()" *ngIf="checkOut">Logout</button>
+    </div>
+</nav>

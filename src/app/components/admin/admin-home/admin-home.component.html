@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+</head>
+<body>
+
+    <app-navbar></app-navbar>
+    <div class="department"><button (click)="department()">View Department</button></div>
+
+    <div class="admin">
+        <div class="admin-home">
+        <div class="admin-home-collection">
+            <div class="admin-home-con">
+                <a routerLink="/adminSurvey">
+                    <div class="admin-content">
+                    
+                    <h1>Create Survey</h1> 
+                    </div>
+                    <div class="admin-icon"><i class="fa-solid fa-plus"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="admin-home-collection">
+            <div class="admin-home-con">
+                <a routerLink="/adminSurveyStatus">
+                
+                    <div class="admin-content">
+                    
+                    <h1>Survey Status</h1> 
+                    </div>
+                    <div class="admin-icon"><i class="fa-solid fa-plus"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="admin-home">
+        <div class="admin-home-collection">
+            <div class="admin-home-con">
+                <a routerLink="/adminDashboard">
+                    <div class="admin-content">
+                    
+                    <h1>ICS Dashboard</h1> 
+                    </div>
+                    <div class="admin-icon"><i class="fa-solid fa-plus"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="admin-home-collection">
+            <div class="admin-home-con">
+                <a routerLink="/adminActionPlan">
+                    <div class="admin-content">
+                    
+                    <h1>Action Plan Status</h1> 
+                    </div>
+                    <div class="admin-icon"><i class="fa-solid fa-plus"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+    
+</body>
+</html>

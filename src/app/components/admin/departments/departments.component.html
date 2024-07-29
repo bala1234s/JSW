@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="allDepartment" >
+     <div class="info-box" *ngFor="let item of data">
+        <h2>Department Information</h2>
+        <div class="info-item">
+            <h4><span class="info-label">Department:</span> <span class="info-value">{{item.Emp_code}}</span></h4>
+        </div>
+
+        <div class="info-item">
+            <h4><span class="info-label">Customer:</span> <span class="info-value">{{item.Emp_name}}</span></h4>
+        </div>
+
+        <div class="info-item">
+            <h4><span class="info-label">Head:</span> <span class="info-value">{{item.Emp_name}}</span></h4>
+        </div>
+        
+        <div class="info-item">
+            <h4><span class="info-label">Email:</span> <span class="info-value">{{item.Emp_mail}}</span></h4>
+        </div>
+
+        <div class="info-item">
+            <h4><span class="info-label">Employee Number:</span> <span class="info-value">{{item.Emp_number}}</span></h4>
+        </div>
+        <button class="view-btn">View</button>
+  </div>
+
+</div>

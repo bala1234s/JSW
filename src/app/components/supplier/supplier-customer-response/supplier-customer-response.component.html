@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+
+<div class="customerReview">
+    <div><h4>Customer name : {{getReview.dept}} </h4></div>
+    <div><h1>Customer review  </h1></div>
+    <div class="respondDate">
+        <div>
+            <h5>Send Date</h5>
+            <h5>Submitted Date</h5>
+        </div>
+        <div>
+            <p>{{getReview.sendDate}}</p>
+            <p>{{getReview.submissionDate}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="customerResponse">
+    <table>
+        <tr>
+            <th>Questionnaire</th>
+            <th>Answer</th>
+            <th>Score</th>
+            <th>Remark</th>
+        </tr>
+
+        <tr *ngFor="let item of getReview.submittedQuestion">
+            <td>{{item.ques}}</td>
+            <td>{{item.choise}}</td>  
+            <td>{{item.score}}</td>
+            <td>{{item.remark}}</td>
+            
+
+        </tr>
+        
+        
+    </table>
+</div>
+
+<div class="feedback">
+    <textarea name="" id="" placeholder="Overall remakes or feedback"></textarea>
+</div>
+<div class="button">
+    <button class="reject" (click)="reject()">Reject</button>
+    <button class="accept" (click)="accept()">Accept</button>
+</div>

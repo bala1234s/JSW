@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+
+<div class="survey-container">
+   <form [formGroup]="survey" (ngSubmit)="submit()">
+  <div class="survey-header">
+    <h4>Take Survey</h4>
+  </div>
+  
+  <div class="survey-details">
+    <div class="detail-item">Received Date: {{takeSurvey.sendDate}}</div>
+    <div class="detail-item">Supplier Department: {{takeSurvey.dept}}</div>
+    <div class="detail-item">Deadline: {{takeSurvey.deadline}}</div>
+  </div>
+
+  <div formArrayName="questions">
+    <div *ngFor="let item of takeSurvey.questions; let i = index" [formGroupName]="i" class="question-container">
+      <div class="question-title">Question {{i + 1}}: {{item.ques}}</div>
+      <div class="options">
+        <div>
+          <input type="radio" name="answer{{i}}" (change)="sta($event, i)" value="1">
+          <label for="">Strongly Disagree</label>
+        </div>
+        <div>
+          <input type="radio" name="answer{{i}}" (change)="sta($event, i)" value="2">
+          <label for="">Disagree</label>
+        </div>
+        <div>
+          <input type="radio" name="answer{{i}}" (change)="sta($event, i)" value="3">
+          <label for="">Agree</label>
+        </div>
+        <div>
+          <input type="radio" name="answer{{i}}" (change)="sta($event, i)" value="4">
+          <label for="">Strongly Agree</label>
+        </div>
+      </div>
+      <div class="remark-box">
+        <label for="remark{{i}}">Remarks:</label>
+        <textarea id="remark{{i}}" formControlName="remark" rows="4" placeholder="Enter your remarks here..." required="Enter remark"></textarea>
+        <!-- <small style="color: red;" *ngIf="survey.controls['remark'].errors?.['required'] && survey.controls['remark'].dirty">Enter the Remark</small> -->
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <div class="remark-box">
+      <label for="overAllRemark">Overall Remarks:</label>
+      <textarea id="overAllRemark" formControlName="overAllRemark" rows="4" placeholder="Enter your remarks here..."></textarea>
+    </div>
+    <button class="send-btn" type="submit">Send</button>
+  </div>
+</form>
+
+
+
+</div>
+
+
+
+   

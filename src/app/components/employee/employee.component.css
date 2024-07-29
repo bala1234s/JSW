@@ -1,0 +1,82 @@
+*{
+    font-family: "Roboto Slab", serif;
+}
+.empPage{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.empBackground{
+    background-image: url('../../../assets/home/salemJSW.jpeg');
+    height: 87vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+/* Container for the employee info */
+/* Container for the employee info */
+/* General box styling */
+.emp {
+    background: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent background */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    backdrop-filter: blur(10px);
+    /* Blurring the background */
+    padding: 20px;
+    /* Internal padding */
+    margin: 20px;
+    /* External margin */
+    max-width: 400px;
+    /* Max width for the box */
+    margin: auto;
+    /* Center the box horizontally */
+}
+
+/* Styling for the heading elements */
+.emp h4 {
+    margin: 10px 0;
+    /* Spacing between elements */
+    font-family: Arial, sans-serif;
+    /* Font family */
+    color: #333;
+    /* Text color */
+}
+
+/* Styling for the select dropdown */
+.emp select {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Internal padding */
+    margin-top: 10px;
+    /* Space above the select box */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: 1px solid #ccc;
+    /* Light border */
+    font-family: Arial, sans-serif;
+    /* Font family */
+}
+
+/* Optional: Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .emp {
+        padding: 15px;
+        /* Smaller padding on small screens */
+    }
+
+    .emp h4 {
+        font-size: 16px;
+        /* Smaller font size */
+    }
+
+    .emp select {
+        padding: 8px;
+        /* Smaller padding for select */
+    }
+}

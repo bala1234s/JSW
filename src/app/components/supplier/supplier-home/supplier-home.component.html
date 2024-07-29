@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+<div class="supplierDetail">
+    <div><h4>Supplier Name :{{empData.empCode}}</h4></div>
+    <div><h1>Customer Response</h1></div>
+    <div class="actionButton">
+        <button (click)="actionPlan()">Action plan</button>
+        <button>View Score</button>
+    </div>
+</div>
+
+<div class="customerResponse">
+    <table>
+        <tr>
+            <th>Customer</th>
+            <th>Received Date</th>
+            <th>Review</th>
+            <th>Response Date</th>
+        </tr>
+
+        <tr *ngFor="let item of empResponse">
+            <td>{{item.dept}}</td>
+            <td>{{item.sendDate}}</td>
+            <td><button (click)="viewReview(item)">Review</button></td>
+            <td>{{item.submissionDate}}</td>
+            
+
+        </tr>
+        
+        
+    </table>
+</div>
